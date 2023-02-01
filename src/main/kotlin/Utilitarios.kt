@@ -1,10 +1,13 @@
 fun tituloPrincipal(){
     println("Hallar el precio de venta final de un producto")
 }
-fun calcularIgv(precioProducto:Int,IGV:Int){
-    IGV%precioProducto
+fun tituloPrecioProducto(){
+    println("Ingrese precio de la venta del producto:")
 }
-fun calcularPrecioFinal(precioProducto: Int,IGV: Int){
-    precioProducto-(IGV%precioProducto)
+fun calcularIgv(precioProducto:Int,IGV:Int):Int{
+   return IGV%precioProducto
+}
+fun calcularPrecioFinal(precioProducto: Int,IGV: Int):Int{
+   return precioProducto-calcularIgv(precioProducto,IGV)
 }
 
