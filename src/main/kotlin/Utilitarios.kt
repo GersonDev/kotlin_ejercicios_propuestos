@@ -25,3 +25,15 @@ fun calcularLaSegundaRazon(primerNumero:Int,segundoNumero:Int,tercerNumero:Int,c
 fun calcularTermino0(primerNumero:Int,segundoNumero:Int,tercerNumero:Int,cuartoNumero:Int):Int{
     return primerNumero - calcularLaSegundaRazon(primerNumero,segundoNumero,tercerNumero,cuartoNumero)
 }
+fun calcularA(segundoNumero:Int,tercerNumero:Int,cuartoNumero:Int):Int{
+    return calcularLaPrimeraRazon(segundoNumero,tercerNumero,cuartoNumero)/2
+}
+fun calcularB(primerNumero:Int,segundoNumero:Int,tercerNumero:Int,cuartoNumero:Int): Int {
+   return calcularLaSegundaRazon(primerNumero,segundoNumero,tercerNumero, cuartoNumero)
+}
+fun calcularC(primerNumero:Int,segundoNumero:Int,tercerNumero:Int,cuartoNumero:Int): Int {
+   return calcularTermino0(primerNumero, segundoNumero, tercerNumero, cuartoNumero)
+}
+fun calcularRespuestaTotal(nTermino:Int,segundoNumero:Int,tercerNumero:Int,cuartoNumero:Int,primerNumero:Int):Int{
+   return (calcularA(segundoNumero, tercerNumero, cuartoNumero))*(nTermino*nTermino)+(calcularB(primerNumero, segundoNumero, tercerNumero, cuartoNumero)*nTermino)+calcularC(primerNumero, segundoNumero, tercerNumero, cuartoNumero)
+}
