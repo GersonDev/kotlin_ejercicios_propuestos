@@ -11,7 +11,7 @@ fun tituloCeroGrado(){
     println("Ingrese el coeficiente de primer grado")
 }
 fun calcularRaiz(primerGrado:Int,segundoGrado:Int,ceroGrado:Int):Int{
-return (primerGrado*primerGrado)-4*(segundoGrado*ceroGrado)
+return (segundoGrado*segundoGrado)-4*(primerGrado*ceroGrado)
 }
 fun calcularB1(primerGrado:Int): Int {
     return primerGrado*(-1)

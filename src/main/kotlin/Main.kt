@@ -3,10 +3,10 @@ fun main(args: Array<String>) {
     var segundoGrado = 0
     var ceroGrado = 0
     tituloPrincipal()
-    tituloPrimerGrado()
-    primerGrado= readln().toInt()
     tituloSegundoGrado()
     segundoGrado = readln().toInt()
+    tituloPrimerGrado()
+    primerGrado= readln().toInt()
     tituloCeroGrado()
     ceroGrado = readln().toInt()
 
